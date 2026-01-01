@@ -1,65 +1,270 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import GradientText from "../components/GradientText";
+import ScrollReveal from "../components/ScrollReveal";
+import StarBorder from "../components/StarBorder";
+import Navigation from "../components/Navigation";
+import DomeGallery from "../components/DomeGallery";
 
 export default function Home() {
+  const galleryImages = [
+    { src: '/images/gallery/Book%20Club%20Panel.jpg', alt: 'Book Club Panel' },
+    { src: '/images/gallery/682141bf-0adc-4e6e-a52c-2f27f495ca98_orig.jpg', alt: 'Library event' },
+    { src: '/images/gallery/34325C4D-705E-439B-AA59-83A2639B7FE8_1_201_a.jpeg', alt: 'Community event' },
+    { src: '/images/gallery/04014eba-525f-4ad9-9d0e-95f0ba80f116.JPG', alt: 'Library space' },
+    { src: '/images/gallery/0d570046-7769-45a9-8adc-ee016b5b47e0.JPG', alt: 'Library activities' },
+    { src: '/images/gallery/BookShelf%20(1).png', alt: 'Bookshelf' },
+    { src: '/images/gallery/img-0779_orig.jpg', alt: 'Library photo' },
+    { src: '/images/gallery/IMG_A9DDFCE4B139-1%20(1).jpeg', alt: 'Community gathering' },
+    { src: '/images/gallery/Chachaji%20School%20Kids.jpg', alt: 'Chachaji School Kids' },
+    { src: '/images/gallery/MDYP0169.jpg', alt: 'Library program' },
+    { src: '/images/gallery/Screenshot%202024-02-23%20at%209.06.47%20PM.png', alt: 'Library program overview' },
+    { src: '/images/gallery/Screenshot%202024-02-23%20at%208.56.51%20PM.png', alt: 'Library activities display' },
+    { src: '/images/gallery/Screenshot%202024-02-23%20at%208.23.58%20PM.png', alt: 'Library program screen' },
+    { src: '/images/gallery/Screenshot%202025-01-16%20at%206.01.04%E2%80%AFPM.png', alt: 'FMSC in a row'},
+    { src: '/images/gallery/Screenshot%202025-01-16%20at%206.01.16%E2%80%AFPM.png', alt: 'FMSC working'},
+    { src: '/images/gallery/Tennis%20Rackets%20Circle-0001.jpg', alt: 'Tennis Rackets Circle' },
+  ];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="min-h-screen bg-white pt-20 md:pt-0">
+      <Navigation />
+
+      {/* Hero Section */}
+      <section className="relative w-full h-screen">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="/images/mumbaislumskids.jpg"
+          alt="Kids in under-resourced communities"
+          fill
+          className="object-cover"
           priority
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
+        {/* Text Content */}
+        <div className="relative z-10 h-full flex flex-col items-center justify-center px-8 sm:px-12 lg:px-16 text-center -translate-y-16">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <h1 
+              className="text-5xl md:text-6xl lg:text-7xl font-semibold text-white leading-tight"
+              style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Access to learning shouldn't depend on your zip code.
+            </h1>
+            <p 
+              className="text-xl md:text-2xl text-white/90 leading-relaxed"
+              style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              We are a 501(c)(3) nonprofit building libraries and tech learning spaces in under-resourced communities so kids and young adults can dream and build a future.
+            </p>
+            <div className="pt-4">
+              <Link
+                href="/past-work"
+                className="inline-block bg-white text-black px-8 py-3 rounded-md hover:bg-gray-100 transition-colors text-lg font-medium"
+                style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+              >
+                See what we've achieved
+              </Link>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      </section>
+
+      {/* Mission Statement */}
+      <section className="w-full py-16 bg-white">
+        <div className="max-w-5xl lg:max-w-6xl mx-auto px-8 text-center">
+          <ScrollReveal
+            baseOpacity={0}
+            enableBlur={true}
+            baseRotation={5}
+            blurStrength={10}
+            textClassName="scroll-reveal-mission text-4xl md:text-5xl lg:text-5xl leading-relaxed"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            Our mission is to make sure children across the world have access to books and technology, irrespective of their race, religion, or financial situation.
+          </ScrollReveal>
+          <div className="mt-8">
+            <Link href="/about" style={{ textDecoration: 'none', display: 'inline-block' }}>
+              <StarBorder
+                as="button"
+                className="star-border-learn-more"
+                color="#DC143C"
+                speed="5s"
+                thickness={0.5}
+                style={{ 
+                  fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
+                }}
+              >
+                Learn about our story
+              </StarBorder>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content Area */}
+      <main className="bg-white">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left side: Text Content */}
+            <div className="space-y-6">
+              <h2 
+                className="text-5xl font-semibold leading-tight"
+                style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
+              >
+                <GradientText
+                  colors={["#8B0000", "#A02020", "#C04040", "#FF6B6B", "#FF9999"]}
+                  animationSpeed={3}
+                  showBorder={false}
+                  className="left-align"
+                >
+                  Project Roupas 2026
+                </GradientText>
+              </h2>
+              <p 
+                className="text-xl text-black leading-relaxed"
+                style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+              >
+                Project Roupas is a limited pre-order apparel drop that turns handmade Brazilian clothing into real investment in favela communities. We partner with artisan companies to create small batch pieces, then use the proceeds to help fund libraries and tech learning centers. Spaces where young people can read, study, and build skills for the future.
+              </p>
+              <div className="pt-4">
+                <Link
+                  href="/project-roupas"
+                  className="inline-block bg-[#DC143C] text-white px-8 py-3 rounded-md hover:bg-[#B9122A] transition-colors text-lg font-medium"
+                  style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                >
+                  Learn more
+                </Link>
+              </div>
+            </div>
+
+            {/* Right side: Image */}
+            <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[600px]">
+              <Image
+                src="/images/projectroupasNOTEXT.png"
+                alt="Project Roupas - Artisan handmade Brazilian clothing"
+                fill
+                className="object-cover rounded-lg"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </main>
+
+      {/* Current Impact Section */}
+      <section className="relative w-full bg-white py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left side: Image */}
+            <div className="relative w-full aspect-[4/3] lg:aspect-square lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/brazilian-kids.jpg"
+                alt="Children in Brazilian favelas"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+
+            {/* Right side: Impact Stats and Text */}
+            <div className="space-y-8">
+              <div>
+                <h2 
+                  className="text-4xl md:text-5xl lg:text-6xl font-semibold text-black mb-6 leading-tight"
+                  style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
+                >
+                  Our Current Impact
+                </h2>
+              </div>
+
+              {/* Stats */}
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-8 py-8">
+                <div className="space-y-2">
+                  <div 
+                    className="text-5xl md:text-6xl font-bold text-[#DC143C]"
+                    style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
+                  >
+                    2
+                  </div>
+                  <div 
+                    className="text-lg md:text-xl text-black font-medium"
+                    style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                  >
+                    Libraries Built
+                  </div>
+                  <div 
+                    className="text-sm md:text-base text-gray-600"
+                    style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                  >
+                    Madhya Pradesh, India
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <div 
+                    className="text-5xl md:text-6xl font-bold text-[#DC143C]"
+                    style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
+                  >
+                    3K
+                  </div>
+                  <div 
+                    className="text-lg md:text-xl text-black font-medium"
+                    style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                  >
+                    Books Donated
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <div 
+                    className="text-5xl md:text-6xl font-bold text-[#DC143C]"
+                    style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
+                  >
+                    $10K
+                  </div>
+                  <div 
+                    className="text-lg md:text-xl text-black font-medium"
+                    style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                  >
+                    Goal for Next
+                  </div>
+                  <div 
+                    className="text-sm md:text-base text-gray-600"
+                    style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                  >
+                    Favelas of Brazil
+                  </div>
+                </div>
+              </div>
+
+              <p 
+                className="text-lg md:text-xl text-black leading-relaxed"
+                style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+              >
+                We're raising $10,000 to build our next library in the favelas of São Paulo, Rio de Janeiro, or Brasília. Help us bring books and technology to children who need it most.
+              </p>
+
+              <div className="pt-4">
+                <Link
+                  href="https://www.zeffy.com/en-US/donation-form/donate-to-make-a-difference-6446"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#DC143C] text-white px-8 py-4 rounded-md hover:bg-[#B9122A] transition-colors text-lg font-medium shadow-lg hover:shadow-xl"
+                  style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                >
+                  Support Our Next Library
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="w-full bg-white" style={{ height: '100vh' }}>
+        <DomeGallery images={galleryImages} grayscale={false} fit={0.8} />
+      </section>
     </div>
   );
 }
