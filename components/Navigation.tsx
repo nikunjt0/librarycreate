@@ -10,7 +10,7 @@ const StaggeredMenu = StaggeredMenuComponent as any;
 export default function Navigation() {
   const menuItems = [
     { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
-    { label: 'Project Roupas', ariaLabel: 'Learn about Project Roupas', link: '/project-roupas' },
+    { label: 'Project Avançar', ariaLabel: 'Learn about Project Avançar', link: '/project-avancar' },
     { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
     { label: 'Past Work', ariaLabel: 'View our past work', link: '/past-work' },
     { label: 'Donate Now', ariaLabel: 'Donate to libraryCreate', link: 'https://www.zeffy.com/en-US/donation-form/donate-to-make-a-difference-6446' }
@@ -60,11 +60,11 @@ export default function Navigation() {
               {/* Navigation Menu */}
               <div className="hidden md:flex items-center gap-10">
                 <Link
-                  href="/project-roupas"
+                  href="/project-avancar"
                   className="text-black hover:text-gray-700 transition-colors text-base font-bold tracking-wide cursor-pointer"
                   style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif', pointerEvents: 'auto' }}
                 >
-                  Project Roupas
+                  Project Avançar
                 </Link>
                 <Link
                   href="/about"

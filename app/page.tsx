@@ -118,18 +118,18 @@ export default function Home() {
                   showBorder={false}
                   className="left-align"
                 >
-                  Project Roupas 2026
+                  Project Avançar 2026
                 </GradientText>
               </h2>
               <p 
                 className="text-xl text-black leading-relaxed"
                 style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
               >
-                Project Roupas is a limited pre-order apparel drop that turns handmade Brazilian clothing into real investment in favela communities. We partner with artisan companies to create small batch pieces, then use the proceeds to help fund libraries and tech learning centers. Spaces where young people can read, study, and build skills for the future.
+                Project Avançar is a limited pre-order apparel drop that turns handmade Brazilian clothing into real investment in favela communities. We partner with artisan companies to create small batch pieces, then use the proceeds to help fund libraries and tech learning centers. Spaces where young people can read, study, and build skills for the future.
               </p>
               <div className="pt-4">
                 <Link
-                  href="/project-roupas"
+                  href="/project-avancar"
                   className="inline-block bg-[#DC143C] text-white px-8 py-3 rounded-md hover:bg-[#B9122A] transition-colors text-lg font-medium"
                   style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
                 >
@@ -142,7 +142,7 @@ export default function Home() {
             <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[600px]">
               <Image
                 src="/images/projectroupasNOTEXT.png"
-                alt="Project Roupas - Artisan handmade Brazilian clothing"
+                alt="Project Avançar - Artisan handmade Brazilian clothing"
                 fill
                 className="object-cover rounded-lg"
                 priority
