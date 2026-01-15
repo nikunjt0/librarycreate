@@ -23,6 +23,11 @@ export default function Footer() {
             <p className="text-sm text-gray-300" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
               Changing the world, one library at a time.
             </p>
+            <p>
+              <Link href="/sponsorship-breakdown" className="text-sm text-gray-300 hover:text-[#DC143C] transition-colors" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                Sponsorship Breakdown Flyer
+              </Link>
+            </p>
           </div>
 
           {/* Contact Info */}
