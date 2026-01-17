@@ -107,14 +107,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left side: Image */}
-            <div className="relative w-full aspect-[4/3] lg:aspect-square lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="/images/modern_library_3d.jpg"
-                alt="Modern library design for Brazil"
-                fill
-                className="object-cover"
-                priority
-              />
+            <div className="relative w-full max-w-lg mx-auto lg:mx-0">
+              <div className="relative rounded-2xl bg-white/20 p-4 shadow-2xl inline-block">
+                <Image
+                  src="/images/modern_library_3d.jpg"
+                  alt="Modern library design for Brazil"
+                  width={700}
+                  height={525}
+                  className="rounded-xl max-w-full h-auto"
+                  priority
+                />
+              </div>
             </div>
 
             {/* Right side: Traction Content */}
