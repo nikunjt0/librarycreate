@@ -102,12 +102,99 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Traction Section */}
+      <section className="w-full py-24 bg-[#CDC9C0]">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left side: Image */}
+            <div className="relative w-full aspect-[4/3] lg:aspect-square lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/modern_library_3d.jpg"
+                alt="Modern library design for Brazil"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+
+            {/* Right side: Traction Content */}
+            <div className="space-y-6">
+              <h2 
+                className="text-4xl md:text-5xl lg:text-6xl font-semibold text-black leading-tight"
+                style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
+              >
+                Building Our Next Library in Brazil
+              </h2>
+              
+              <div className="space-y-4">
+                <div className="flex items-baseline gap-2">
+                  <span 
+                    className="text-4xl md:text-5xl font-bold text-[#DC143C]"
+                    style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
+                  >
+                    $520
+                  </span>
+                  <span 
+                    className="text-xl md:text-2xl text-gray-700"
+                    style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                  >
+                    raised of $50,000 goal
+                  </span>
+                </div>
+
+                {/* Progress Bar */}
+                <div className="w-full">
+                  <div className="w-full bg-white/60 rounded-full h-6 overflow-hidden shadow-inner">
+                    <div 
+                      className="bg-[#DC143C] h-full rounded-full transition-all duration-500 flex items-center justify-end pr-2"
+                      style={{ width: '1.04%' }}
+                    >
+                      <span className="text-xs font-medium text-white">1%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <p 
+                  className="text-lg md:text-xl text-gray-800 leading-relaxed pt-4"
+                  style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                >
+                  As we hit milestones, we're building Take a Book, Give a Book mini libraries and organizing tech literacy activities for Brazilian youth. Every contribution brings us closer to a full library and tech center that will transform lives.
+                </p>
+
+                <div className="pt-4">
+                  <Link
+                    href="https://www.zeffy.com/en-US/donation-form/donate-to-make-a-difference-6446"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-[#DC143C] text-white px-8 py-3 rounded-md hover:bg-[#B9122A] transition-colors text-lg font-medium shadow-lg hover:shadow-xl"
+                    style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                  >
+                    Support Our Brazil Campaign
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content Area */}
       <main className="bg-white">
         <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left side: Text Content */}
-            <div className="space-y-6">
+            {/* Image - First on mobile, second on desktop */}
+            <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[600px] order-1 lg:order-2">
+              <Image
+                src="/images/projectroupasNOTEXT.png"
+                alt="Project Avançar - Artisan handmade Brazilian clothing"
+                fill
+                className="object-cover rounded-lg"
+                priority
+              />
+            </div>
+
+            {/* Text Content - Second on mobile, first on desktop */}
+            <div className="space-y-6 order-2 lg:order-1">
               <h2 
                 className="text-5xl font-semibold leading-tight"
                 style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
@@ -136,17 +223,6 @@ export default function Home() {
                   Learn more
                 </Link>
               </div>
-            </div>
-
-            {/* Right side: Image */}
-            <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[600px]">
-              <Image
-                src="/images/projectroupasNOTEXT.png"
-                alt="Project Avançar - Artisan handmade Brazilian clothing"
-                fill
-                className="object-cover rounded-lg"
-                priority
-              />
             </div>
           </div>
         </div>
@@ -221,7 +297,7 @@ export default function Home() {
                     className="text-5xl md:text-6xl font-bold text-[#DC143C]"
                     style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
                   >
-                    $10K
+                    $50K
                   </div>
                   <div 
                     className="text-lg md:text-xl text-black font-medium"
@@ -242,7 +318,7 @@ export default function Home() {
                 className="text-lg md:text-xl text-black leading-relaxed"
                 style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
               >
-                We're raising $10,000 to build our next library in the favelas of São Paulo, Rio de Janeiro, or Brasília. Help us bring books and technology to children who need it most.
+                We're raising $50,000 to build our next library in the favelas of São Paulo, Rio de Janeiro, or Brasília. Help us bring books and technology to children who need it most.
               </p>
 
               <div className="pt-4">
