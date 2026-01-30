@@ -113,7 +113,7 @@ export default function SponsorshipBreakdown() {
                     className="text-xl font-semibold text-[#DC143C] mb-4"
                     style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
                   >
-                    $0 - $1,000
+                    $0 - $5,000
                   </p>
                 </div>
               </div>
@@ -155,7 +155,7 @@ export default function SponsorshipBreakdown() {
                     className="text-xl font-semibold text-[#DC143C] mb-4"
                     style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
                   >
-                    $1,000 - $10,000
+                    $5,000 - $30,000
                   </p>
                 </div>
               </div>
@@ -199,7 +199,7 @@ export default function SponsorshipBreakdown() {
                     className="text-xl font-semibold text-[#DC143C] mb-2"
                     style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
                   >
-                    $10,000+
+                    $30,000+
                   </p>
                   <p 
                     className="text-base text-gray-700 italic"
