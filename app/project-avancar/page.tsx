@@ -148,27 +148,7 @@ export default function ProjectAvancar() {
             className="text-base md:text-lg text-white/80 leading-relaxed"
             style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
           >
-            The Brazil expansion will be supported by an entrepreneurial approach to fundraising that blends philanthropy with revenue-generating partnerships. LibraryCreate plans to partner with Brazilian consumer brands to create products that allocate a portion of proceeds directly toward funding the construction and operation of the library. These partnerships provide a sustainable funding mechanism while allowing brands to align with a meaningful social impact initiative. One potential partner currently under consideration is the Brazilian shoe company Yuool, among other artisanal and consumer-focused brands.
-          </p>
-        </div>
-      </section>
-
-      {/* Alumni and Institutional Support */}
-      <section className="max-w-4xl mx-auto px-8 py-16">
-        <div className="border-l-4 border-white/30 pl-6 mb-8">
-          <h2 
-            className="text-2xl md:text-3xl text-white uppercase mb-4"
-            style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
-          >
-            Alumni and Institutional Support
-          </h2>
-        </div>
-        <div className="bg-white/5 border border-white/10 rounded-lg p-8">
-          <p 
-            className="text-base md:text-lg text-white/80 leading-relaxed"
-            style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
-          >
-            In addition to brand partnerships, the initiative will engage successful Brazilian alumni living in the United States, particularly those connected to the University of Illinois, where the project founders are currently seniors. Through alumni networks and Lemann Centers at universities across the U.S., the project aims to connect with donors who are motivated to give back to Brazil in a structured and impactful way. As a registered 501(c)(3), Library Create is able to provide tax-deductible donation receipts, making contributions both impactful and financially efficient for donors.
+            The Brazil expansion will be supported by an entrepreneurial approach to fundraising that blends philanthropy with revenue-generating partnerships. LibraryCreate plans to partner with Brazilian consumer brands to create products that allocate a portion of proceeds directly toward funding the construction and operation of the library. These partnerships provide a sustainable funding mechanism while allowing brands to align with a meaningful social impact initiative.
           </p>
         </div>
       </section>
