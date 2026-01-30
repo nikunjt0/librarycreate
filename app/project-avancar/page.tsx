@@ -100,7 +100,7 @@ export default function ProjectAvancar() {
             className="text-2xl md:text-3xl text-white uppercase mb-4"
             style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
           >
-            Why Brazil
+            Why Brazil?
           </h2>
         </div>
         <div className="bg-white/5 border border-white/10 rounded-lg p-8">
