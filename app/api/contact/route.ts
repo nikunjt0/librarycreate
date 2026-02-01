@@ -80,17 +80,17 @@ This message was sent from the libraryCreate contact form.
       console.log("📧 SENDING EMAIL...");
       console.log("========================================");
       console.log("From:", process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev");
-      console.log("To: contactlibrarycreate@gmail.com");
+      console.log("To: team@librarycreate.org");
       console.log("Reply-To:", email);
       console.log("Subject: New Contact Form Submission from", name);
       console.log("========================================");
       
       // Important: onboarding@resend.dev can only send to the email associated with your Resend account
-      // To send to contactlibrarycreate@gmail.com, you need to:
+      // To send to team@librarycreate.org, you need to:
       // 1. Verify your own domain in Resend, OR
       // 2. Send to the email address associated with your Resend account first
       const fromEmail = process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev";
-      const toEmail = "contactlibrarycreate@gmail.com";
+      const toEmail = "team@librarycreate.org";
       
       // If using onboarding@resend.dev, check if we should send to the account email instead
       // You can set RESEND_ACCOUNT_EMAIL in .env.local to your Resend account email for testing
@@ -169,7 +169,7 @@ This message was sent from the libraryCreate contact form.
         console.error("");
         console.error("Common issues:");
         console.error("1. If using onboarding@resend.dev, you can only send to YOUR Resend account email");
-        console.error("2. To send to contactlibrarycreate@gmail.com, you need to verify your domain");
+        console.error("2. To send to team@librarycreate.org, you need to verify your domain");
         console.error("3. Check your Resend dashboard for domain verification status");
         console.error("4. Set RESEND_ACCOUNT_EMAIL in .env.local to your Resend account email for testing");
         throw new Error(emailResult.error.message || JSON.stringify(emailResult.error));
@@ -184,7 +184,7 @@ This message was sent from the libraryCreate contact form.
         if (actualToEmail !== toEmail) {
           console.warn(`⚠️  Note: Sent to ${actualToEmail} instead of ${toEmail}`);
           console.warn("   onboarding@resend.dev can only send to your Resend account email");
-          console.warn("   To send to contactlibrarycreate@gmail.com, verify your domain in Resend");
+          console.warn("   To send to team@librarycreate.org, verify your domain in Resend");
         }
         console.log("Check your Resend dashboard: https://resend.com/emails");
         console.log("========================================");
@@ -223,7 +223,7 @@ This message was sent from the libraryCreate contact form.
       // You might want to store submissions in a database as backup
       return NextResponse.json(
         { 
-          message: "Form submitted successfully, but email failed to send. Please contact us directly at +1 (630) 440-1822 or contactlibrarycreate@gmail.com",
+          message: "Form submitted successfully, but email failed to send. Please contact us directly at +1 (630) 440-1822 or team@librarycreate.org",
           emailSent: false,
           error: emailError?.message || "Unknown error"
         },

@@ -113,7 +113,7 @@ export default function SponsorshipBreakdown() {
                     className="text-xl font-semibold text-[#DC143C] mb-4"
                     style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
                   >
-                    $0 - $5,000
+                    $1,000 - $5,000
                   </p>
                 </div>
               </div>
@@ -126,6 +126,7 @@ export default function SponsorshipBreakdown() {
                   <strong className="text-gray-900">Benefits include:</strong>
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-800 ml-4" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                  <li>Event with libraryCreate</li>
                   <li>Recognition on LibraryCreate website as a sponsor</li>
                   <li>Thank you mention in quarterly newsletter</li>
                   <li>Tax-deductible donation receipt</li>
@@ -136,7 +137,7 @@ export default function SponsorshipBreakdown() {
                   className="text-gray-700 text-sm mt-4 italic"
                   style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
                 >
-                  Perfect for individuals, small businesses, and organizations looking to make a meaningful contribution to educational equity.
+                  Perfect for businesses and organizations looking to make a meaningful contribution to educational equity.
                 </p>
               </div>
             </div>
@@ -168,6 +169,7 @@ export default function SponsorshipBreakdown() {
                   <strong className="text-gray-900">All Basic Sponsor benefits, plus:</strong>
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-800 ml-4" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                  <li>Event with libraryCreate</li>
                   <li>Featured sponsor spot on LibraryCreate website homepage</li>
                   <li>Logo placement in annual impact report</li>
                   <li>Invitation to exclusive sponsor events and site visits</li>
@@ -175,12 +177,13 @@ export default function SponsorshipBreakdown() {
                   <li>Recognition at library or tech center opening ceremonies</li>
                   <li>Custom social media content highlighting your sponsorship</li>
                   <li>Opportunity to visit sponsored locations (when applicable)</li>
+                  <li>Plaque on library (example: ACME Bookshelf, etc)</li>
                 </ul>
                 <p 
                   className="text-gray-700 text-sm mt-4 italic"
                   style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
                 >
-                  Ideal for mid-size companies, foundations, and major donors seeking deeper engagement and visibility.
+                  Ideal for foundations and major donors seeking deeper engagement and visibility.
                 </p>
               </div>
             </div>
@@ -337,7 +340,7 @@ export default function SponsorshipBreakdown() {
           </p>
           <div className="flex justify-center">
             <a
-              href="mailto:contactlibrarycreate@gmail.com?subject=Sponsorship Inquiry"
+              href="mailto:team@librarycreate.org?subject=Sponsorship Inquiry"
               className="inline-block bg-[#DC143C] text-white px-8 py-3 rounded-md hover:bg-[#B9122A] transition-colors text-lg font-medium"
               style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
             >

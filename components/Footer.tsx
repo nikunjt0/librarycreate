@@ -28,6 +28,11 @@ export default function Footer() {
                 Sponsorship Breakdown Flyer
               </Link>
             </p>
+            <p>
+              <Link href="/slide-deck" className="text-sm text-gray-300 hover:text-[#DC143C] transition-colors" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                Slide Deck
+              </Link>
+            </p>
           </div>
 
           {/* Contact Info */}

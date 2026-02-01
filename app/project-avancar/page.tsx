@@ -184,8 +184,8 @@ export default function ProjectAvancar() {
               Get Involved
             </h3>
             <div className="flex flex-col items-center gap-4 text-sm text-white/70" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
-              <a href="mailto:contactlibrarycreate@gmail.com" className="hover:text-white transition-colors">
-                contactlibrarycreate@gmail.com
+              <a href="mailto:team@librarycreate.org" className="hover:text-white transition-colors">
+                team@librarycreate.org
               </a>
               <a href="tel:+16304401822" className="hover:text-white transition-colors">
                 +1 (630) 440-1822

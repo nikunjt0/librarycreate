@@ -104,11 +104,11 @@ export default function Contact() {
                   Email
                 </h3>
                 <a
-                  href="mailto:contactlibrarycreate@gmail.com"
+                  href="mailto:team@librarycreate.org"
                   className="text-base text-[#DC143C] hover:text-[#B9122A] transition-colors"
                   style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
                 >
-                  contactlibrarycreate@gmail.com
+                  team@librarycreate.org
                 </a>
               </div>
             </div>
@@ -190,7 +190,7 @@ export default function Contact() {
                   <p className="text-red-800 text-sm mb-2" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
                     There was an error sending your message. Please try again or contact us directly at{" "}
                     <a href="tel:+16304401822" className="underline">+1 (630) 440-1822</a> or{" "}
-                    <a href="mailto:contactlibrarycreate@gmail.com" className="underline">contactlibrarycreate@gmail.com</a>.
+                    <a href="mailto:team@librarycreate.org" className="underline">team@librarycreate.org</a>.
                   </p>
                 </div>
               )}

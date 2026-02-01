@@ -181,6 +181,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Corporate Library Build Sessions */}
+      <section className="w-full py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left side: Image */}
+            <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[500px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-1">
+              <Image
+                src="/images/littlefreelibrary3ddesign.png"
+                alt="Take a Book, Leave a Book neighborhood library design"
+                fill
+                className="object-contain bg-gray-50 p-4"
+              />
+            </div>
+
+            {/* Right side: Text Content */}
+            <div className="space-y-6 order-2 lg:order-2">
+              <h2 
+                className="text-5xl font-semibold text-black leading-tight"
+                style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
+              >
+                Corporate Library Build Sessions
+              </h2>
+              <p 
+                className="text-xl text-black leading-relaxed"
+                style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+              >
+                We're working with Chicagoland companies to take teams out and build &quot;Take a Book, Leave a Book&quot; neighborhood libraries in high-impact communities. Our goal is to increase community impact and help us get closer to our dream of building our next library in Brazil.
+              </p>
+              <div className="pt-4">
+                <Link
+                  href="/contact"
+                  className="inline-block bg-[#DC143C] text-white px-8 py-3 rounded-md hover:bg-[#B9122A] transition-colors text-lg font-medium"
+                  style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                >
+                  Reach out here
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content Area */}
       <main className="bg-white">
         <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 py-16">
