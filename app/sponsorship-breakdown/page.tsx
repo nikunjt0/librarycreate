@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function SponsorshipBreakdown() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
+      {/* Header x */}
       <div className="absolute md:fixed top-6 left-6 z-50 flex items-center">
         <Link href="/" className="flex items-center gap-3">
           <Image 
