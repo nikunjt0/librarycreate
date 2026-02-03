@@ -178,6 +178,7 @@ export default function SponsorshipBreakdown() {
                   <li>Custom social media content highlighting your sponsorship</li>
                   <li>Opportunity to visit sponsored locations (when applicable)</li>
                   <li>Plaque on library (example: ACME Bookshelf, etc)</li>
+                  <li><strong>At $10,000:</strong> Special trip for you and your family to the Amazon Rainforest in Brazil to see the library and explore the rainforest</li>
                 </ul>
                 <p 
                   className="text-gray-700 text-sm mt-4 italic"
