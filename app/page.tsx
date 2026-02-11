@@ -76,8 +76,8 @@ export default function Home() {
 
       {/* Thank You Strip */}
       <section className="w-full relative border-t border-b border-gray-200 bg-white overflow-hidden">
-        {/* Left pillar */}
-        <div className="absolute left-8 md:left-16 lg:left-24 top-0 bottom-0 w-16 md:w-24 pointer-events-none">
+        {/* Left pillar - hidden on mobile */}
+        <div className="hidden md:block absolute left-8 md:left-16 lg:left-24 top-0 bottom-0 w-16 md:w-24 pointer-events-none">
           <Image
             src="/images/pillar.svg"
             alt=""
@@ -85,8 +85,8 @@ export default function Home() {
             className="object-cover object-bottom"
           />
         </div>
-        {/* Right pillar */}
-        <div className="absolute right-8 md:right-16 lg:right-24 top-0 bottom-0 w-16 md:w-24 pointer-events-none">
+        {/* Right pillar - hidden on mobile */}
+        <div className="hidden md:block absolute right-8 md:right-16 lg:right-24 top-0 bottom-0 w-16 md:w-24 pointer-events-none">
           <Image
             src="/images/pillar.svg"
             alt=""
