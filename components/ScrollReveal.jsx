@@ -17,8 +17,8 @@ const ScrollReveal = ({
   blurStrength = 4,
   containerClassName = '',
   textClassName = '',
-  rotationEnd = 'bottom bottom',
-  wordAnimationEnd = 'bottom bottom'
+  rotationEnd = 'center center',
+  wordAnimationEnd = 'center center'
 }) => {
   const containerRef = useRef(null);
 
@@ -49,7 +49,7 @@ const ScrollReveal = ({
         scrollTrigger: {
           trigger: el,
           scroller,
-          start: 'top bottom',
+          start: 'top bottom-=15%',
           end: rotationEnd,
           scrub: true
         }
@@ -68,7 +68,7 @@ const ScrollReveal = ({
         scrollTrigger: {
           trigger: el,
           scroller,
-          start: 'top bottom-=20%',
+          start: 'top bottom-=10%',
           end: wordAnimationEnd,
           scrub: true
         }
@@ -86,7 +86,7 @@ const ScrollReveal = ({
           scrollTrigger: {
             trigger: el,
             scroller,
-            start: 'top bottom-=20%',
+            start: 'top bottom-=10%',
             end: wordAnimationEnd,
             scrub: true
           }

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import GradientText from "../components/GradientText";
 import ScrollReveal from "../components/ScrollReveal";
+import CountUp from "../components/CountUp";
 import StarBorder from "../components/StarBorder";
 import Navigation from "../components/Navigation";
 import DomeGallery from "../components/DomeGallery";
@@ -60,13 +61,82 @@ export default function Home() {
             </p>
             <div className="pt-4">
               <Link
-                href="/past-work"
+                href="https://calendly.com/team-librarycreate/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-white text-black px-8 py-3 rounded-md hover:bg-gray-100 transition-colors text-lg font-medium"
                 style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
               >
-                See what we've achieved
+                Get in Touch
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Thank You Strip */}
+      <section className="w-full relative border-t border-b border-gray-200 bg-white overflow-hidden">
+        {/* Left pillar */}
+        <div className="absolute left-8 md:left-16 lg:left-24 top-0 bottom-0 w-16 md:w-24 pointer-events-none">
+          <Image
+            src="/images/pillar.svg"
+            alt=""
+            fill
+            className="object-cover object-bottom"
+          />
+        </div>
+        {/* Right pillar */}
+        <div className="absolute right-8 md:right-16 lg:right-24 top-0 bottom-0 w-16 md:w-24 pointer-events-none">
+          <Image
+            src="/images/pillar.svg"
+            alt=""
+            fill
+            className="object-cover object-bottom scale-x-[-1]"
+          />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-8 py-16 md:py-20">
+          <p
+            className="text-[#DC143C] text-xs font-semibold uppercase tracking-[0.2em] mb-6"
+            style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+          >
+            With gratitude
+          </p>
+          <h2
+            className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-8 leading-snug"
+            style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
+          >
+            Thank you to Menlo Ventures and SVCF for your generous{" "}
+            <span className="whitespace-nowrap tabular-nums text-[#DC143C]">$<CountUp from={0} to={10000} separator="," direction="up" duration={0.1} startWhen={true} className="text-[#DC143C]" /> </span> grant.
+          </h2>
+          <div className="flex flex-wrap items-center justify-center gap-x-14 gap-y-8 pt-4">
+            <a
+              href="https://menlovc.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center h-14 md:h-16 hover:opacity-90 transition-opacity"
+            >
+              <Image
+                src="/images/menlo_ventures.png"
+                alt="Menlo Ventures"
+                width={200}
+                height={64}
+                className="h-full w-auto object-contain object-center"
+              />
+            </a>
+            <a
+              href="https://www.svcf.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center h-28 md:h-32 hover:opacity-90 transition-opacity"
+            >
+              <Image
+                src="/images/svcf_logo.png"
+                alt="Silicon Valley Community Foundation"
+                width={560}
+                height={140}
+                className="h-full w-auto object-contain object-center"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -135,7 +205,7 @@ export default function Home() {
                     className="text-4xl md:text-5xl font-bold text-[#DC143C]"
                     style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
                   >
-                    $520
+                    $10,515
                   </span>
                   <span 
                     className="text-xl md:text-2xl text-gray-700"
@@ -150,9 +220,9 @@ export default function Home() {
                   <div className="w-full bg-white/60 rounded-full h-6 overflow-hidden shadow-inner">
                     <div 
                       className="bg-[#DC143C] h-full rounded-full transition-all duration-500 flex items-center justify-end pr-2"
-                      style={{ width: '1.04%' }}
+                      style={{ width: '21.03%' }}
                     >
-                      <span className="text-xs font-medium text-white">1%</span>
+                      <span className="text-xs font-medium text-white">21%</span>
                     </div>
                   </div>
                 </div>
