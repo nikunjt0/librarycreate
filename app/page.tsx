@@ -106,7 +106,7 @@ export default function Home() {
             style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
           >
             Thank you to Menlo Ventures and SVCF for your generous{" "}
-            <span className="whitespace-nowrap tabular-nums text-[#DC143C]">$<CountUp from={0} to={10000} separator="," direction="up" duration={0.1} startWhen={true} className="text-[#DC143C]" /> </span> grant.
+            <span className="whitespace-nowrap tabular-nums text-[#DC143C]">$<CountUp from={0} to={10000} separator="," direction="up" duration={0.1} startWhen={true} className="text-[#DC143C]" /> </span> grant!
           </h2>
           <div className="flex flex-wrap items-center justify-center gap-x-14 gap-y-8 pt-4">
             <a
