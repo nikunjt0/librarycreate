@@ -67,7 +67,7 @@ export async function GET(req: NextRequest) {
 
     if (signatureOk && tsOk && (mid || cid || rid)) {
       const event = {
-        type: "email_open",
+        type: "email_open" as const,
         at: new Date(now).toISOString(),
         mid,
         cid,

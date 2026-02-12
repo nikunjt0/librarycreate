@@ -43,6 +43,8 @@ export async function GET(req: NextRequest) {
   const tsOk =
     Number.isFinite(tsNum) && tsNum > 0 && Math.abs(now - tsNum) <= maxAgeMs;
 
+  let event = null;
+
   try {
     const ip =
       (req.headers.get("x-forwarded-for") || "").split(",")[0]?.trim() || "";
@@ -50,14 +52,21 @@ export async function GET(req: NextRequest) {
     const referer = req.headers.get("referer") || "";
 
     if (dest && signatureOk && tsOk && (mid || cid || rid)) {
-      const event = {
-        type: "email_click",
+      const typeParam = url.searchParams.get("type") ?? "click";
+
+      // Error response if an unexpected type is passed
+      if (typeParam !== "click") {
+        return NextResponse.json({ error: "Invalid type" }, { status: 400 });
+      }
+
+      event = {
+        type: "email_click" as const,
         at: new Date(now).toISOString(),
         mid,
         cid,
         rid,
-        name: name || undefined,
-        email: email || undefined,
+        name,
+        email,
         dest,
         ip,
         ua,
@@ -67,18 +76,25 @@ export async function GET(req: NextRequest) {
       await appendEvent(event);
 
       if (process.env.TRACKING_WEBHOOK_URL) {
-        await fetch(process.env.TRACKING_WEBHOOK_URL, {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify(event),
-        });
+        try {
+          await fetch(process.env.TRACKING_WEBHOOK_URL, {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(event),
+          });
+        } catch (webhookErr) {
+          // Optionally log error for webhook call
+          // console.error('[track] webhook error', webhookErr);
+        }
       } else {
         // eslint-disable-next-line no-console
         console.log("[track] email_click", event);
       }
     }
-  } catch {
-    // ignore
+  } catch (error) {
+    // Optionally log the error for debugging, or just ignore silently
+    // console.error("[track] error in click tracking", error);
+    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
   }
 
   if (!dest) {
@@ -88,4 +104,3 @@ export async function GET(req: NextRequest) {
   // 302 so clients quickly land; you can switch to 307 if you care about method preservation.
   return NextResponse.redirect(dest, 302);
 }
-
