@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import GradientText from "../components/GradientText";
@@ -9,7 +10,43 @@ import StarBorder from "../components/StarBorder";
 import Navigation from "../components/Navigation";
 import DomeGallery from "../components/DomeGallery";
 
+const PROGRESS_BAR_DURATION_MS = 600;
+
 export default function Home() {
+  const [progressWidth, setProgressWidth] = useState(0);
+  const [showPercentText, setShowPercentText] = useState(false);
+  const progressBarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = progressBarRef.current;
+    if (!el) return;
+
+    let startTimer: ReturnType<typeof setTimeout>;
+    let textTimer: ReturnType<typeof setTimeout>;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (!entry.isIntersecting) return;
+
+        observer.disconnect();
+
+        startTimer = setTimeout(() => setProgressWidth(21.03), 50);
+        textTimer = setTimeout(
+          () => setShowPercentText(true),
+          50 + PROGRESS_BAR_DURATION_MS
+        );
+      },
+      { threshold: 0.25 }
+    );
+
+    observer.observe(el);
+    return () => {
+      observer.disconnect();
+      clearTimeout(startTimer!);
+      clearTimeout(textTimer!);
+    };
+  }, []);
   const galleryImages = [
     { src: '/images/gallery/Book%20Club%20Panel.jpg', alt: 'Book Club Panel' },
     { src: '/images/gallery/682141bf-0adc-4e6e-a52c-2f27f495ca98_orig.jpg', alt: 'Library event' },
@@ -216,13 +253,20 @@ export default function Home() {
                 </div>
 
                 {/* Progress Bar */}
-                <div className="w-full">
+                <div ref={progressBarRef} className="w-full">
                   <div className="w-full bg-white/60 rounded-full h-6 overflow-hidden shadow-inner">
                     <div 
-                      className="bg-[#DC143C] h-full rounded-full transition-all duration-500 flex items-center justify-end pr-2"
-                      style={{ width: '21.03%' }}
+                      className="bg-[#DC143C] h-full rounded-full flex items-center justify-end pr-2"
+                      style={{ 
+                        width: `${progressWidth}%`,
+                        transition: `width ${PROGRESS_BAR_DURATION_MS}ms ease-out`
+                      }}
                     >
-                      <span className="text-xs font-medium text-white">21%</span>
+                      <span 
+                        className={`text-xs font-medium text-white transition-opacity duration-300 ${showPercentText ? 'opacity-100' : 'opacity-0'}`}
+                      >
+                        21%
+                      </span>
                     </div>
                   </div>
                 </div>
