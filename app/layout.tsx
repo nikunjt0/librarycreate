@@ -12,6 +12,24 @@ const garamond = EB_Garamond({
 export const metadata: Metadata = {
   title: "libraryCreate",
   description: "libraryCreate",
+  openGraph: {
+    title: "libraryCreate",
+    description: "libraryCreate",
+    images: [
+      {
+        url: "/images/amazon_rainforest_library.png",
+        width: 1200,
+        height: 630,
+        alt: "Amazon rainforest library - libraryCreate",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "libraryCreate",
+    description: "libraryCreate",
+    images: ["/images/amazon_rainforest_library.png"],
+  },
 };
 
 export default function RootLayout({
