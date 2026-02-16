@@ -173,15 +173,15 @@ export default function Home() {
       </section>
 
       {/* Traction Section */}
-      <section className="w-full py-24 bg-[#CDC9C0]">
+      <section className="w-full py-24 bg-[#F5F2EB]">
         <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left side: Image */}
             <div className="relative w-full max-w-lg mx-auto lg:mx-0">
               <div className="relative rounded-2xl bg-white/20 p-4 shadow-2xl inline-block">
                 <Image
-                  src="/images/modern_library_3d.jpg"
-                  alt="Modern library design for Brazil"
+                  src="/images/amazon_rainforest_library.png"
+                  alt="Amazon rainforest library design for Brazil"
                   width={700}
                   height={525}
                   className="rounded-xl max-w-full h-auto"
@@ -209,7 +209,7 @@ export default function Home() {
                   </span>
                   <span 
                     className="text-xl md:text-2xl text-gray-700"
-                    style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                    style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
                   >
                     raised of $50,000 goal
                   </span>
