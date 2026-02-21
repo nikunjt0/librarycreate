@@ -130,6 +130,98 @@ export default function WaysToGivePage() {
         </div>
       </section>
 
+      {/* Sponsorship Tiers */}
+      <section className="w-full py-20 md:py-24 bg-[#F5F2EB]">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
+          <h2
+            className="text-3xl md:text-4xl font-semibold text-black mb-4 text-center"
+            style={{ fontFamily: "var(--font-garamond), Garamond, serif" }}
+          >
+            Sponsorship Tiers
+          </h2>
+          <p
+            className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-16"
+            style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+          >
+            Explore partnership levels and what&apos;s possible.
+          </p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Basic Sponsor */}
+            <div className="bg-white/85 backdrop-blur-sm rounded-2xl p-8 border border-white/60 shadow-lg shadow-gray-300/40 hover:shadow-xl hover:border-[#DC143C]/30 transition-all duration-300">
+              <h3
+                className="text-2xl font-semibold text-[#DC143C] mb-2"
+                style={{ fontFamily: "var(--font-garamond), Garamond, serif" }}
+              >
+                Basic Sponsor
+              </h3>
+              <p className="text-xl font-semibold text-black mb-6">$1,000 – $5,000</p>
+              <ul className="space-y-2 text-gray-700 mb-6" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                <li>• Event with libraryCreate</li>
+                <li>• Website recognition as a sponsor</li>
+                <li>• Thank you in quarterly newsletter</li>
+                <li>• Tax-deductible receipt</li>
+                <li>• Social media acknowledgment</li>
+                <li>• Impact report on donation use</li>
+              </ul>
+              <p className="text-sm text-gray-600 italic">
+                Perfect for businesses and organizations making a meaningful contribution.
+              </p>
+            </div>
+
+            {/* Premium Sponsor */}
+            <div className="bg-white/85 backdrop-blur-sm rounded-2xl p-8 border border-white/60 shadow-lg shadow-gray-300/40 hover:shadow-xl hover:border-[#DC143C]/30 transition-all duration-300">
+              <h3
+                className="text-2xl font-semibold text-[#DC143C] mb-2"
+                style={{ fontFamily: "var(--font-garamond), Garamond, serif" }}
+              >
+                Premium Sponsor
+              </h3>
+              <p className="text-xl font-semibold text-black mb-6">$5,000 – $30,000</p>
+              <p className="text-sm text-gray-600 mb-3">All Basic benefits, plus:</p>
+              <ul className="space-y-2 text-gray-700 mb-6" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                <li>• Featured spot on homepage</li>
+                <li>• Logo in annual impact report</li>
+                <li>• Exclusive sponsor events & site visits</li>
+                <li>• Quarterly personalized impact updates</li>
+                <li>• Recognition at opening ceremonies</li>
+                <li>• Custom social media content</li>
+                <li>• Plaque on library (e.g., ACME Bookshelf)</li>
+              </ul>
+              <p className="text-sm text-gray-600 italic">
+                Ideal for foundations and major donors seeking deeper engagement.
+              </p>
+            </div>
+
+            {/* Partner */}
+            <div className="bg-white/85 backdrop-blur-sm rounded-2xl p-8 border border-white/60 shadow-lg shadow-gray-300/40 hover:shadow-xl hover:border-[#DC143C]/40 transition-all duration-300 ring-2 ring-[#DC143C]/20">
+              <h3
+                className="text-2xl font-semibold text-[#DC143C] mb-2"
+                style={{ fontFamily: "var(--font-garamond), Garamond, serif" }}
+              >
+                Partner
+              </h3>
+              <p className="text-xl font-semibold text-black mb-6">$30,000+</p>
+              <p className="text-sm font-medium text-[#DC143C] mb-2">Library or Tech Center Named After You</p>
+              <p className="text-sm text-gray-600 mb-3">All Premium benefits, plus:</p>
+              <ul className="space-y-2 text-gray-700 mb-6" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                <li>• Naming rights for facility</li>
+                <li>• Permanent recognition plaque at entrance</li>
+                <li>• Dedicated webpage with your partnership story</li>
+                <li>• VIP access to grand opening</li>
+                <li>• Bi-annual meetings with leadership</li>
+                <li>• Input on site selection and planning</li>
+                <li>• Custom video of your sponsored facility</li>
+                <li>• Press and media recognition</li>
+              </ul>
+              <p className="text-sm text-gray-600 italic">
+                The ultimate partnership for transformational educational impact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Payment Options Grid */}
       <section className="w-full py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
