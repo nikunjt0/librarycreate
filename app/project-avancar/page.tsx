@@ -108,7 +108,7 @@ export default function ProjectAvancar() {
             className="text-base md:text-lg text-white/80 leading-relaxed"
             style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
           >
-            Brazil was selected as the next expansion market due to both the scale of educational inequality and a strong personal connection driving the initiative. One of the project leads, Lalit Gurrapu, has had the opportunity to visit Brazil and experience firsthand both the country's cultural richness and the educational challenges faced by communities in low-income and vulnerable areas. This experience served as a catalyst for pursuing an initiative that brings educational resources back to a place that had a meaningful personal impact. The project will focus on underserved urban communities, including favelas and low-income neighborhoods in cities such as Rio de Janeiro and São Paulo.
+            Brazil was selected as the next expansion market due to both the scale of educational inequality and a strong personal connection driving the initiative. One of the project leads, Lalit Gurrapu, has had the opportunity to visit Brazil and experience firsthand both the country's cultural richness and the educational challenges faced by communities in low-income and vulnerable areas. This experience served as a catalyst for pursuing an initiative that brings educational resources back to a place that had a meaningful personal impact. The project will focus on underserved urban communities, including rainforest villages and low-income neighborhoods in cities such as Rio de Janeiro and São Paulo.
           </p>
         </div>
       </section>

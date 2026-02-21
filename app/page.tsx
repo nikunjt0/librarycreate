@@ -468,7 +468,7 @@ export default function Home() {
                     className="text-sm md:text-base text-gray-600"
                     style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
                   >
-                    Favelas of Brazil
+                    Rainforest of Brazil
                   </div>
                 </div>
               </div>
@@ -477,7 +477,7 @@ export default function Home() {
                 className="text-lg md:text-xl text-black leading-relaxed"
                 style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
               >
-                We're raising $50,000 to build our next library in the favelas of São Paulo, Rio de Janeiro, or Brasília. Help us bring books and technology to children who need it most.
+                We're raising $50,000 to build our next library in the Rainforest of Amazonas, Brazil. Help us bring books and technology to children who need it most.
               </p>
 
               <div className="pt-4">
