@@ -60,6 +60,12 @@ export default function PastWork() {
     "/images/past-work/library1/Chachaji%20School%20Kids.jpg"
   ];
 
+  const covidFoodDriveImages = [
+    "/images/past-work/covid-food-drive/all_food_ground.webp",
+    "/images/past-work/covid-food-drive/food_trunk_garage.webp",
+    "/images/past-work/covid-food-drive/food_with_pantry_worker.webp",
+  ];
+
   return (
     <div className="min-h-screen bg-white pt-20 md:pt-0">
       <Navigation />
@@ -343,6 +349,74 @@ export default function PastWork() {
                   <strong className="text-black">15+ years</strong> and
                   lecturer of Math and Physics for{" "}
                   <strong className="text-black">30+ years</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* COVID-19 Food Drive for Homeless Section */}
+        <section className="mb-20">
+          <div className="bg-gray-50 rounded-lg p-8 lg:p-12">
+            <div className="mb-8">
+              <h2
+                className="text-4xl font-semibold text-black mb-4"
+                style={{ fontFamily: "var(--font-garamond), Garamond, serif" }}
+              >
+                2020 COVID Food Drive for Homeless
+              </h2>
+            </div>
+
+            {/* Image Collage */}
+            <div className="mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                {covidFoodDriveImages.map((image, idx) => (
+                  <div
+                    key={idx}
+                    className="relative w-full aspect-[4/3] rounded-lg overflow-hidden"
+                  >
+                    <Image
+                      src={image}
+                      alt={
+                    idx === 0
+                      ? "Donated food and supplies spread out"
+                      : idx === 1
+                      ? "Food donations loaded in trunk"
+                      : "Food delivered at pantry with worker"
+                  }
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <h3
+                  className="text-2xl font-semibold text-black mb-4"
+                  style={{
+                    fontFamily: "var(--font-garamond), Garamond, serif",
+                  }}
+                >
+                  Supporting Aurora&apos;s Homeless During the Pandemic
+                </h3>
+                <p
+                  className="text-lg text-gray-700 mb-4"
+                  style={{
+                    fontFamily:
+                      '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                  }}
+                >
+                  The pandemic hit the homeless especially hard. Close quarters and lack of
+                  testing spread the virus quickly, and shelters moving residents to hotels
+                  couldn&apos;t provide the steady food and supplies volunteers once did. We started a food drive and donated{" "}
+                  <strong className="text-black">$550 to Hesed House</strong> plus canned
+                  food, sanitizers, and toiletries to the{" "}
+                  <strong className="text-black">Aurora Interfaith Food Bank</strong>. It was
+                  a chance to help our most vulnerable neighbors stay nourished and
+                  sanitized when they needed it most.
                 </p>
               </div>
             </div>
