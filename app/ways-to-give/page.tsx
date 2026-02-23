@@ -78,7 +78,7 @@ export default function WaysToGivePage() {
       <Navigation />
 
       {/* Hero Section with Amazon Rainforest */}
-      <section className="relative w-full min-h-[45vh] md:min-h-[55vh]">
+      <section className="relative w-full min-h-[45vh] md:min-h-[35vh]">
         <Image
           src="/images/ways-to-give/AmazonRainforest.jpg"
           alt="Amazon rainforest — supporting libraries that nurture growth"
@@ -87,7 +87,7 @@ export default function WaysToGivePage() {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/30" />
-        <div className="absolute inset-0 flex flex-col items-center justify-end pb-12 md:pb-20 px-8 text-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-end pb-12 md:pb-8 px-8 text-center">
           <h1
             className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight max-w-4xl"
             style={{ fontFamily: "var(--font-garamond), Garamond, serif" }}
@@ -104,7 +104,7 @@ export default function WaysToGivePage() {
       </section>
 
       {/* Donate CTA */}
-      <section className="w-full py-12 bg-[#F5F2EB] border-t border-b border-gray-200">
+      <section className="w-full py-12 md:py-8 bg-[#F5F2EB] border-t border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-8 text-center">
           <p
             className="text-sm uppercase tracking-[0.2em] text-gray-600 mb-4"
@@ -131,21 +131,8 @@ export default function WaysToGivePage() {
       </section>
 
       {/* Sponsorship Tiers */}
-      <section className="w-full py-20 md:py-24 bg-[#F5F2EB]">
+      <section className="w-full py-20 md:pt-12 md:pb-24 bg-[#F5F2EB]">
         <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
-          <h2
-            className="text-3xl md:text-4xl font-semibold text-black mb-4 text-center"
-            style={{ fontFamily: "var(--font-garamond), Garamond, serif" }}
-          >
-            Sponsorship Tiers
-          </h2>
-          <p
-            className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-16"
-            style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
-          >
-            Explore partnership levels and what&apos;s possible.
-          </p>
-
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Basic Sponsor */}
             <div className="bg-white/85 backdrop-blur-sm rounded-2xl p-8 border border-white/60 shadow-lg shadow-gray-300/40 hover:shadow-xl hover:border-[#DC143C]/30 transition-all duration-300">
@@ -180,13 +167,13 @@ export default function WaysToGivePage() {
               <p className="text-xl font-semibold text-black mb-6">$5,000 – $30,000</p>
               <p className="text-sm text-gray-600 mb-3">All Basic benefits, plus:</p>
               <ul className="space-y-2 text-gray-700 mb-6" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                <li>• Plaque on library (e.g. X Bookshelf)</li>
                 <li>• Featured spot on homepage</li>
                 <li>• Logo in annual impact report</li>
                 <li>• Exclusive sponsor events & site visits</li>
                 <li>• Quarterly personalized impact updates</li>
                 <li>• Recognition at opening ceremonies</li>
                 <li>• Custom social media content</li>
-                <li>• Plaque on library (e.g., ACME Bookshelf)</li>
               </ul>
               <p className="text-sm text-gray-600 italic">
                 Ideal for foundations and major donors seeking deeper engagement.
@@ -202,7 +189,7 @@ export default function WaysToGivePage() {
                 Partner
               </h3>
               <p className="text-xl font-semibold text-black mb-6">$30,000+</p>
-              <p className="text-sm font-medium text-[#DC143C] mb-2">Library or Tech Center Named After You</p>
+              <p className="text-md font-medium text-[#DC143C] mb-2">Library or Tech Center Named After You</p>
               <p className="text-sm text-gray-600 mb-3">All Premium benefits, plus:</p>
               <ul className="space-y-2 text-gray-700 mb-6" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
                 <li>• Naming rights for facility</li>
