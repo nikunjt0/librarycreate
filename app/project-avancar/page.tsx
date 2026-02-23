@@ -1,7 +1,13 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+
+const ModelViewerGrid = dynamic(
+  () => import("@/components/ModelViewerGrid"),
+  { ssr: false }
+);
 
 export default function ProjectAvancar() {
   return (
@@ -49,6 +55,59 @@ export default function ProjectAvancar() {
               className="w-full h-auto object-contain"
               priority
             />
+          </div>
+        </div>
+      </section>
+
+      {/* v0 Design — architecture/design section */}
+      <section className="max-w-5xl mx-auto px-8 py-20">
+        <div className="text-center mb-12">
+          <h2 
+            className="text-2xl md:text-3xl lg:text-4xl font-medium text-white uppercase tracking-[0.2em] mb-2"
+            style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
+          >
+            v0 Design
+          </h2>
+          <p 
+            className="text-sm md:text-base text-white/60 uppercase tracking-[0.15em]"
+            style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+          >
+            by Rhone Tatham
+          </p>
+        </div>
+        {/* Design-led layout: visual first */}
+        <div className="space-y-8">
+          <div className="bg-white/5 rounded-sm border border-white/[0.08] overflow-hidden" style={{ boxShadow: '0 0 0 1px rgba(255,255,255,0.04)' }}>
+            <iframe
+              src="/library_designs/Library-Model%20Line-work.pdf"
+              className="w-full h-[580px]"
+              title="Library Model Line-work - Starting designs and materials + costs"
+            />
+            <div className="flex items-center justify-between px-6 py-3 border-t border-white/10">
+              <span className="text-xs text-white/50 uppercase tracking-wider" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                Line-work · Materials · Cost estimates
+              </span>
+              <a 
+                href="/library_designs/Library-Model%20Line-work.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-xs text-white/50 hover:text-white transition-colors uppercase tracking-wider"
+                style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+              >
+                View PDF →
+              </a>
+            </div>
+          </div>
+          <div className="max-w-2xl mx-auto px-2">
+            <p 
+              className="text-sm md:text-base text-white/70 leading-relaxed"
+              style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+            >
+              Our v0 design represents an initial 3D model of the library, developed with the limited information available from our Brazilian partners. Given the Amazon Rainforest&apos;s frequent flooding, the building is elevated on cement posts to protect the structure and its contents. The construction will use sustainably sourced wood from the local community, aligning with both environmental and economic considerations. This first iteration is designed to accommodate approximately 30 people, targeting roughly 2,000 square feet of space—though dimensions may shift based on community needs, environmental constraints, or budget. Plumbing and electrical systems remain to be specified and will be addressed in later design phases.
+            </p>
+          </div>
+          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+            <ModelViewerGrid />
           </div>
         </div>
       </section>
