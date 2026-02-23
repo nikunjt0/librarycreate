@@ -26,26 +26,26 @@ export default function ProjectAvancar() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center px-8 py-24 pt-32">
-        <div className="relative w-full max-w-4xl mx-auto text-center">
+      <section className="relative min-h-screen flex items-center justify-center px-8 py-20 pt-28">
+        <div className="relative w-full max-w-3xl mx-auto text-center">
           <h1 
-            className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-4 leading-tight"
+            className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-2 leading-tight"
             style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
           >
             Library Create 2026: Brazil Expansion
           </h1>
           <p 
-            className="text-xl md:text-2xl text-white/80 mb-8"
+            className="text-base md:text-lg text-white/80 mb-4"
             style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
           >
             Project Avançar
           </p>
-          <div className="mt-12 max-w-2xl mx-auto">
+          <div className="mt-6 max-w-xl mx-auto">
             <Image
               src="/images/projectavancar.png"
               alt="Project Avançar"
-              width={600}
-              height={400}
+              width={480}
+              height={320}
               className="w-full h-auto object-contain"
               priority
             />
@@ -129,46 +129,6 @@ export default function ProjectAvancar() {
             style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
           >
             The proposed initiative centers on building a community-based library and technology center designed to improve literacy and digital access among youth. The space would include physical learning materials, computer access, and internet connectivity to support both traditional and modern forms of education. By concentrating resources in high-need areas, the project aims to generate measurable educational impact and long-term benefits for students and their communities.
-          </p>
-        </div>
-      </section>
-
-      {/* Entrepreneurial Fundraising Model */}
-      <section className="max-w-4xl mx-auto px-8 py-16">
-        <div className="border-l-4 border-white/30 pl-6 mb-8">
-          <h2 
-            className="text-2xl md:text-3xl text-white uppercase mb-4"
-            style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
-          >
-            Entrepreneurial Fundraising Model
-          </h2>
-        </div>
-        <div className="bg-white/5 border border-white/10 rounded-lg p-8">
-          <p 
-            className="text-base md:text-lg text-white/80 leading-relaxed"
-            style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
-          >
-            The Brazil expansion will be supported by an entrepreneurial approach to fundraising that blends philanthropy with revenue-generating partnerships. LibraryCreate plans to partner with Brazilian consumer brands to create products that allocate a portion of proceeds directly toward funding the construction and operation of the library. These partnerships provide a sustainable funding mechanism while allowing brands to align with a meaningful social impact initiative.
-          </p>
-        </div>
-      </section>
-
-      {/* Leadership and Motivation */}
-      <section className="max-w-4xl mx-auto px-8 py-16 pb-24">
-        <div className="border-l-4 border-white/30 pl-6 mb-8">
-          <h2 
-            className="text-2xl md:text-3xl text-white uppercase mb-4"
-            style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
-          >
-            Leadership and Motivation
-          </h2>
-        </div>
-        <div className="bg-white/5 border border-white/10 rounded-lg p-8">
-          <p 
-            className="text-base md:text-lg text-white/80 leading-relaxed"
-            style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
-          >
-            Education has played a defining role in the leadership behind this initiative. Having been personally impacted by scholarships and access to educational opportunities, the project leaders are deeply committed to extending those same opportunities to students who lack access to basic educational resources. The Brazil expansion represents a values-driven continuation of Library Create's global mission and a focused effort to scale educational impact through thoughtful partnerships and disciplined execution.
           </p>
         </div>
       </section>
