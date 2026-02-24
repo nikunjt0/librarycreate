@@ -242,7 +242,7 @@ export default function Home() {
                     className="text-4xl md:text-5xl font-bold text-[#DC143C]"
                     style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
                   >
-                    $10,720
+                    $10,820
                   </span>
                   <span 
                     className="text-xl md:text-2xl text-gray-700"
