@@ -69,6 +69,14 @@ export default function Footer() {
                 Instagram
               </a>
               <a
+                href="https://x.com/librarycreate"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#DC143C] transition-colors"
+              >
+                X
+              </a>
+              <a
                 href="https://www.facebook.com/102755891907749"
                 target="_blank"
                 rel="noopener noreferrer"
