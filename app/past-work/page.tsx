@@ -44,6 +44,11 @@ export default function PastWork() {
     "/images/gallery/Screenshot%202024-02-23%20at%209.06.47%20PM.png",
   ];
 
+  const mexicoVolunteeringImages = [
+    "/images/past-work/mexico-volunteering/puerto_vallarta_volunteering.jpg",
+    "/images/past-work/mexico-volunteering/sayulita_sunset.jpg",
+  ];
+
   const library2Images = [
     "/images/past-work/library2/school2pic1.webp",
     "/images/past-work/library2/school2pic2.webp",
@@ -197,6 +202,62 @@ export default function PastWork() {
                   community. It was a great community building event that
                   greatly helped the homeless population of Aurora! Big thanks to our other partner, 
                   A3N Media, for video coverage.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 2023 Mexico Volunteering Trip Section */}
+        <section className="mb-20">
+          <div className="bg-gray-50 rounded-lg p-8 lg:p-12">
+            <div className="mb-8">
+              <h2
+                className="text-4xl font-semibold text-black mb-4"
+                style={{ fontFamily: "var(--font-garamond), Garamond, serif" }}
+              >
+                2023 Mexico Volunteering Trip
+              </h2>
+            </div>
+
+            {/* Image Collage */}
+            <div className="mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {mexicoVolunteeringImages.map((image, idx) => (
+                  <div
+                    key={idx}
+                    className="relative w-full aspect-[16/9] rounded-lg overflow-hidden"
+                  >
+                    <Image
+                      src={image}
+                      alt={`2023 Mexico Volunteering Trip - Image ${idx + 1}`}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Mexico Volunteering Information */}
+            <div className="space-y-6">
+              <div>
+                <h3
+                  className="text-2xl font-semibold text-black mb-4"
+                  style={{
+                    fontFamily: "var(--font-garamond), Garamond, serif",
+                  }}
+                >
+                  Teaching English in Puerto Vallarta
+                </h3>
+                <p
+                  className="text-lg text-gray-700 mb-4"
+                  style={{
+                    fontFamily:
+                      '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                  }}
+                >
+                  We traveled to Puerto Vallarta, Mexico to teach English in local school classrooms. Knocking on doors of neighborhood schools, we found those that could use an extra pair of hands. With our basic Spanish, we connected with students and learned about their lives. We met joyful students who loved going to the beach, reading books, and spending time with family. The experience showed us what communities with strong educational and family values can achieve.
                 </p>
               </div>
             </div>
