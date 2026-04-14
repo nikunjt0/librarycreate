@@ -29,9 +29,15 @@ export default function Footer() {
               </Link>
             </p>
             <p>
-              <Link href="/slide-deck" className="text-sm text-gray-300 hover:text-[#DC143C] transition-colors" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+              <a
+                href="/2026.03.27%20-%20libraryCreate%20Introduction.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-gray-300 hover:text-[#DC143C] transition-colors"
+                style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+              >
                 Slide Deck
-              </Link>
+              </a>
             </p>
           </div>
 

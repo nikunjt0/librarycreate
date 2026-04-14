@@ -31,7 +31,7 @@ export default function Home() {
 
         observer.disconnect();
 
-        startTimer = setTimeout(() => setProgressWidth(21.03), 50);
+        startTimer = setTimeout(() => setProgressWidth(28.06), 50);
         textTimer = setTimeout(
           () => setShowPercentText(true),
           50 + PROGRESS_BAR_DURATION_MS
@@ -242,7 +242,7 @@ export default function Home() {
                     className="text-4xl md:text-5xl font-bold text-[#DC143C]"
                     style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
                   >
-                    $10,920
+                    $14,027.50
                   </span>
                   <span 
                     className="text-xl md:text-2xl text-gray-700"
@@ -265,7 +265,7 @@ export default function Home() {
                       <span 
                         className={`text-xs font-medium text-white transition-opacity duration-300 ${showPercentText ? 'opacity-100' : 'opacity-0'}`}
                       >
-                        21%
+                        28%
                       </span>
                     </div>
                   </div>
