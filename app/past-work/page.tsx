@@ -49,6 +49,17 @@ export default function PastWork() {
     "/images/past-work/mexico-volunteering/sayulita_sunset.jpg",
   ];
 
+  const rioImages = [
+    "/images/past-work/rio-trip/P1350323.webp",
+    "/images/past-work/rio-trip/P1350374.webp",
+    "/images/past-work/rio-trip/P1350528.webp",
+    "/images/past-work/rio-trip/P1350621.webp",
+    "/images/past-work/rio-trip/P1350645.webp",
+    "/images/past-work/rio-trip/P1350653.webp",
+  ];
+
+  const indiaTripImages = ["/images/past-work/india-trip/dad_india.webp"];
+
   const library2Images = [
     "/images/past-work/library2/school2pic1.webp",
     "/images/past-work/library2/school2pic2.webp",
@@ -81,6 +92,83 @@ export default function PastWork() {
         >
           Past Work
         </h1>
+
+        {/* 2026 Rio de Janeiro Trip Section */}
+        <section className="mb-20">
+          <div className="bg-gray-50 rounded-lg p-8 lg:p-12">
+            <div className="mb-8">
+              <h2
+                className="text-4xl font-semibold text-black mb-4"
+                style={{ fontFamily: "var(--font-garamond), Garamond, serif" }}
+              >
+                2026 Rio de Janeiro Trip
+              </h2>
+            </div>
+
+            {/* Image Collage */}
+            <div className="mb-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                {rioImages.map((image, idx) => (
+                  <div
+                    key={idx}
+                    className="relative w-full aspect-[4/3] rounded-lg overflow-hidden"
+                  >
+                    <Image
+                      src={image}
+                      alt={`2026 Rio de Janeiro Trip - Image ${idx + 1}`}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Rio Trip Information */}
+            <div className="space-y-6">
+              <div>
+                <h3
+                  className="text-2xl font-semibold text-black mb-4"
+                  style={{
+                    fontFamily: "var(--font-garamond), Garamond, serif",
+                  }}
+                >
+                  Bridging the Tech Gap in Brazil
+                </h3>
+                <p
+                  className="text-lg text-gray-700 mb-4"
+                  style={{
+                    fontFamily:
+                      '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                  }}
+                >
+                  Members from our team visited Rio de Janeiro🇧🇷. The trip
+                  reinforced something urgent: the technological gap is still
+                  growing, and too many communities are being left out of the
+                  opportunities that access to tech and education can create.
+                  Going to the Royal Portuguese Reading Room showed us how much
+                  is possible. Standing since 1837, it is one of the most
+                  beautiful libraries in the world. It showed us our job is not
+                  only to build libraries &amp; tech centers, but to make sure
+                  they become lasting centers of culture. Then we met Raul. He
+                  grew up in the favelas of Sao Paulo, worked as a teen
+                  accountant, learned English in Ireland, and now owns multiple
+                  businesses while giving back to his community. His story showed
+                  us how tech literacy and English can open doors for kids across
+                  Brazil. Next we visited the Museu de Favela and got a tour from
+                  Liz. The museum showed the culture rooted in favelas. While
+                  media portrays these communities as dangerous, the reality is
+                  more nuanced. Liz taught us about the struggle but also the work
+                  being done to uplift the community. We were supposed to meet
+                  with students in another favela prepping for the ENEM, but
+                  violence in the area canceled the visit. On Zoom, we spoke with
+                  nonprofit leaders about how free AI tools can support studying.
+                  Inspiring to see work being done to expand access to higher ed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* 2024 Feed My Starving Children Night Section */}
         <section className="mb-20">
@@ -327,6 +415,62 @@ export default function PastWork() {
                 >
                   Championed by Principal Deepak Sharma
                 </h4>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 2021 India Trip Section */}
+        <section className="mb-20">
+          <div className="bg-gray-50 rounded-lg p-8 lg:p-12">
+            <div className="mb-8">
+              <h2
+                className="text-4xl font-semibold text-black mb-4"
+                style={{ fontFamily: "var(--font-garamond), Garamond, serif" }}
+              >
+                2021 India Trip
+              </h2>
+            </div>
+
+            {/* Image Collage */}
+            <div className="mb-6 flex justify-center">
+              {indiaTripImages.map((image, idx) => (
+                <div
+                  key={idx}
+                  className="relative w-full max-w-2xl aspect-[2/1] rounded-lg overflow-hidden"
+                >
+                  <Image
+                    src={image}
+                    alt={`2021 India Trip - Image ${idx + 1}`}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* India Trip Information */}
+            <div className="space-y-6">
+              <div>
+                <h3
+                  className="text-2xl font-semibold text-black mb-4"
+                  style={{
+                    fontFamily: "var(--font-garamond), Garamond, serif",
+                  }}
+                >
+                  Visiting Schools in Our Hometown Region
+                </h3>
+                <p
+                  className="text-lg text-gray-700 mb-4"
+                  style={{
+                    fontFamily:
+                      '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                  }}
+                >
+                  Went to India and visited schools from our hometown village
+                  region. Gave students a playbook on how to use education as
+                  leverage in life.
+                </p>
               </div>
             </div>
           </div>
