@@ -49,6 +49,13 @@ export default function PastWork() {
     "/images/past-work/mexico-volunteering/sayulita_sunset.jpg",
   ];
 
+  const library3Images = [
+    "/images/past-work/library3/library3-1.jpg",
+    "/images/past-work/library3/library3-2.jpg",
+    "/images/past-work/library3/library3-3.jpg",
+    "/images/past-work/library3/library3-4.jpg",
+  ];
+
   const rioImages = [
     "/images/past-work/rio-trip/P1350323.webp",
     "/images/past-work/rio-trip/P1350374.webp",
@@ -92,6 +99,79 @@ export default function PastWork() {
         >
           Past Work
         </h1>
+
+        {/* Library 3 Section */}
+        <section className="mb-20">
+          <div className="bg-gray-50 rounded-lg p-8 lg:p-12">
+            <div className="mb-8">
+              <h2
+                className="text-4xl font-semibold text-black mb-4"
+                style={{ fontFamily: "var(--font-garamond), Garamond, serif" }}
+              >
+                Library #3 in 2026
+              </h2>
+            </div>
+
+            {/* Image Collage */}
+            <div className="mb-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                {library3Images.map((image, idx) => (
+                  <div
+                    key={idx}
+                    className="relative w-full aspect-[4/3] rounded-lg overflow-hidden"
+                  >
+                    <Image
+                      src={image}
+                      alt={`Library 3 - Image ${idx + 1}`}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Library Information */}
+            <div className="space-y-6">
+              <div>
+                <h3
+                  className="text-2xl font-semibold text-black mb-4"
+                  style={{
+                    fontFamily: "var(--font-garamond), Garamond, serif",
+                  }}
+                >
+                  Our Third Library
+                </h3>
+                <p
+                  className="text-lg text-gray-700 mb-4"
+                  style={{
+                    fontFamily:
+                      '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                  }}
+                >
+                  We built this library in the Amazon Rainforest river villages
+                  of Acajatuba, and it now serves as a learning center with AC
+                  and resources for students in the community. We are working on
+                  digitizing this by adding laptops and tablets to the
+                  curriculum for students.
+                </p>
+              </div>
+
+              {/* Partner Information */}
+              <div className="bg-white rounded-lg p-6 border-l-4 border-[#DC143C]">
+                <h4
+                  className="text-xl font-semibold text-black mb-3"
+                  style={{
+                    fontFamily: "var(--font-garamond), Garamond, serif",
+                  }}
+                >
+                  Built in collaboration with Campus B and Vicelli, the community
+                  leader from Acajatuba
+                </h4>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* 2026 Rio de Janeiro Trip Section */}
         <section className="mb-20">
