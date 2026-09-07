@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import GradientText from "../components/GradientText";
 import ScrollReveal from "../components/ScrollReveal";
 import CountUp from "../components/CountUp";
 import StarBorder from "../components/StarBorder";
@@ -64,6 +63,9 @@ export default function Home() {
     { src: '/images/gallery/Screenshot%202025-01-16%20at%206.01.04%E2%80%AFPM.png', alt: 'FMSC in a row'},
     { src: '/images/gallery/Screenshot%202025-01-16%20at%206.01.16%E2%80%AFPM.png', alt: 'FMSC working'},
     { src: '/images/gallery/Tennis%20Rackets%20Circle-0001.jpg', alt: 'Tennis Rackets Circle' },
+    { src: '/images/gallery/brazil-brick-build.jpg', alt: 'Building the library in Acajatuba, Brazil' },
+    { src: '/images/gallery/brazil-learning-center.jpg', alt: 'Students learning at our Amazon library' },
+    { src: '/images/gallery/brazil-library-building.jpg', alt: 'Our library in the Amazon Rainforest river villages of Acajatuba' },
   ];
 
   return (
@@ -217,8 +219,8 @@ export default function Home() {
             <div className="relative w-full max-w-lg mx-auto lg:mx-0">
               <div className="relative rounded-2xl bg-white/20 p-4 shadow-2xl inline-block">
                 <Image
-                  src="/images/amazon_rainforest_library.png"
-                  alt="Amazon rainforest library design for Brazil"
+                  src="/images/brazil-library-building.jpg"
+                  alt="Library built in the Amazon Rainforest river villages of Acajatuba, Brazil"
                   width={700}
                   height={525}
                   className="rounded-xl max-w-full h-auto"
@@ -295,98 +297,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Corporate Library Build Sessions */}
-      <section className="w-full py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left side: Image */}
-            <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[500px] rounded-2xl overflow-hidden shadow-xl order-1 lg:order-1">
-              <Image
-                src="/images/littlefreelibrary3ddesign.png"
-                alt="Take a Book, Leave a Book neighborhood library design"
-                fill
-                className="object-contain bg-gray-50 p-4"
-              />
-            </div>
-
-            {/* Right side: Text Content */}
-            <div className="space-y-6 order-2 lg:order-2">
-              <h2 
-                className="text-5xl font-semibold text-black leading-tight"
-                style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
-              >
-                Corporate Library Build Sessions
-              </h2>
-              <p 
-                className="text-xl text-black leading-relaxed"
-                style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
-              >
-                We're working with Chicagoland companies to take teams out and build &quot;Take a Book, Leave a Book&quot; neighborhood libraries in high-impact communities. Our goal is to increase community impact and help us get closer to our dream of building our next library in Brazil.
-              </p>
-              <div className="pt-4">
-                <Link
-                  href="/contact"
-                  className="inline-block bg-[#DC143C] text-white px-8 py-3 rounded-md hover:bg-[#B9122A] transition-colors text-lg font-medium"
-                  style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
-                >
-                  Reach out here
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Main Content Area */}
-      <main className="bg-white">
-        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Image - First on mobile, second on desktop */}
-            <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[600px] order-1 lg:order-2">
-              <Image
-                src="/images/projectroupasNOTEXT.png"
-                alt="Project Avançar - Artisan handmade Brazilian clothing"
-                fill
-                className="object-cover rounded-lg"
-                priority
-              />
-            </div>
-
-            {/* Text Content - Second on mobile, first on desktop */}
-            <div className="space-y-6 order-2 lg:order-1">
-              <h2 
-                className="text-5xl font-semibold leading-tight"
-                style={{ fontFamily: 'var(--font-garamond), Garamond, serif' }}
-              >
-                <GradientText
-                  colors={["#8B0000", "#A02020", "#C04040", "#FF6B6B", "#FF9999"]}
-                  animationSpeed={3}
-                  showBorder={false}
-                  className="left-align"
-                >
-                  Project Avançar 2026
-                </GradientText>
-              </h2>
-              <p 
-                className="text-xl text-black leading-relaxed"
-                style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
-              >
-                Project Avançar is a limited pre-order apparel drop that turns handmade Brazilian clothing into real investment in favela communities. We partner with artisan companies to create small batch pieces, then use the proceeds to help fund libraries and tech learning centers. Spaces where young people can read, study, and build skills for the future.
-              </p>
-              <div className="pt-4">
-                <Link
-                  href="/project-avancar"
-                  className="inline-block bg-[#DC143C] text-white px-8 py-3 rounded-md hover:bg-[#B9122A] transition-colors text-lg font-medium"
-                  style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
-                >
-                  Learn more
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-
       {/* Current Impact Section */}
       <section className="relative w-full bg-white py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
@@ -394,8 +304,8 @@ export default function Home() {
             {/* Left side: Image */}
             <div className="relative w-full aspect-[4/3] lg:aspect-square lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/brazilian-kids.jpg"
-                alt="Children in Brazilian favelas"
+                src="/images/current-impact-amazon.jpg"
+                alt="Students studying at our library in the Amazon Rainforest village of Acajatuba"
                 fill
                 className="object-cover"
                 priority
